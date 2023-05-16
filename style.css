@@ -1,0 +1,110 @@
+:root {
+  --color-primario : #000;
+  --color-secundario: #262322;
+  --color-terciario: #ce0808;
+  --color-texto: #ffffff;
+  
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.card img {
+  max-height: 18rem;
+  min-height: 18rem;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+.new-row {
+  display: none;
+}
+
+.carousel {
+  margin-bottom: 4rem;
+}
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+.carousel-item {
+  height: 32rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+@media (min-width: 40em) {
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+}
+
+
+.main-nav__menu {
+  height: 100%;
+  display: flex;
+}
+
+.main-nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding: 0 0rem;
+  justify-content: flex-start;
+}
+
+.main-nav ul {
+  list-style: none;
+}
+
+.main-nav__menu-item {
+  font-size: 1.75rem;
+  float: left;
+  color: var(--color-texto);
+}
+
+
+.main-nav a{
+  display: block;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.main-nav__menu-item:hover .main-nav__submenu{
+  display: block;
+}
+
+.main-nav__submenu {
+  display: none;
+  min-width: 140px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 1);
+  z-index: 2;
+}
+
+.main-nav__menu-item a {
+  padding: 0 2rem;
+  display: block;
+  height: 5rem;
+  line-height: 5rem;
+}
+
+.main-nav__menu-item a:hover {
+  background-color: #343434;
+  color: var(--color-primary);
+}
+
